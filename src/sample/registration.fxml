@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regpane" prefHeight="553.0" prefWidth="916.0" style="-fx-background-color: #bbb;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrationController">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="1011.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-32.0" AnchorPane.leftAnchor="-10.0" AnchorPane.rightAnchor="-87.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@image/board_black_line_texture_background_wood_55220_300x168.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Pane prefHeight="50.0" prefWidth="903.0" style="-fx-background-color: #131415;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="466.0" text="WELCOME TO REGISTRATION FORM" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnhome" layoutX="795.0" mnemonicParsing="false" onAction="#LoadSample" prefHeight="50.0" prefWidth="121.0" style="-fx-background-color: #ffffff;" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <padding>
+                  <Insets left="1.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/images%20(2).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="button3" layoutX="337.0" layoutY="342.0" mnemonicParsing="false" onAction="#Register" prefHeight="40.0" prefWidth="242.0" style="-fx-background-color: #1D56BF;" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="studentfname" alignment="CENTER" layoutX="336.0" layoutY="104.0" prefHeight="33.0" prefWidth="242.0" promptText="FIRST NAME">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="studentgpa" alignment="CENTER" layoutX="336.0" layoutY="243.0" prefHeight="34.0" prefWidth="242.0" promptText="GPA">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="studentlname" alignment="CENTER" layoutX="336.0" layoutY="150.0" prefHeight="34.0" prefWidth="242.0" promptText="LAST NAME" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="studentpassword" alignment="CENTER" layoutX="337.0" layoutY="290.0" prefHeight="39.0" prefWidth="242.0" promptText="PASSWORD">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="registrationlabel" alignment="CENTER" layoutX="221.0" layoutY="402.0" prefHeight="39.0" prefWidth="474.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="195.0" prefHeight="40.0" prefWidth="98.0" text="GENDER" textFill="#b58d8d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="male" layoutX="424.0" layoutY="201.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="68.0" text="male" textFill="#f8f8f8">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="501.0" layoutY="201.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="74.0" text="female" textFill="#dfd9d9" toggleGroup="$gender">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="idlabel" alignment="CENTER" layoutX="269.0" layoutY="70.0" prefHeight="34.0" prefWidth="282.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="choose" layoutX="337.0" layoutY="450.0" mnemonicParsing="false" onAction="#Choosefile" prefHeight="40.0" prefWidth="242.0" style="-fx-background-color: #1D56BF;" text="IMPORT FROM FILE" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
