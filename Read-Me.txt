@@ -1,0 +1,1 @@
+this project is all about predicting the performance of a student depending on his grade, exam and some questionaries.
