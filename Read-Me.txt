@@ -1,1 +1,1 @@
-this project is all about predicting the performance of a student depending on his grade, exam and some questionaries.
+this project is all about predicting the performance of a student depending on his grade, exam and some questionaries. And this project is done by using javaFX, FXML and mysql database.
